@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System;  // Ajouté pour accéder aux variables d'environnement
 using DotNetEnv;  // Ajouté pour charger le fichier .env
