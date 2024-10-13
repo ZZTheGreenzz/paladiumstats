@@ -1,0 +1,61 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Fichier .env (variables d'environnement)
+.env
+
+# Binaires et fichiers compilés
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.app
+*.so
+*.dylib
+*.lib
+
+# Fichiers de configuration de l'environnement de développement
+.vscode/
+.idea/
+*.user
+*.suo
+*.csproj.user
+*.sln.docstates
+
+# Packages NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Logs et fichiers de diagnostic
+*.log
+Logs/
+
+# Répertoires de cache
+node_modules/
+dist/
+out/
+wwwroot/lib/
+
+# Fichiers de test et de build
+TestResults/
+build/
+PublishProfiles/
+
+# Clés privées et certificats
+paladium-key.pem
+*.pem
+*.key
+*.crt
+*.der
+*.pfx
+
+# Divers
+Thumbs.db
+Desktop.ini

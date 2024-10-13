@@ -1,0 +1,1 @@
+web: dotnet bin/Release/net8.0/WebApplication2.dll
