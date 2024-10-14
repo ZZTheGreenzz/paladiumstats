@@ -170,7 +170,7 @@
     <script>
         async function loadPlayerInfo(playerName) {
             try {
-                const response = await fetch(`http://paladiumstats-api-env.eba-dkugt7an.us-east-1.elasticbeanstalk.com/api/player/${playerName}`);
+                const response = await fetch(`https://paladiumstats-api-env.eba-dkugt7an.us-east-1.elasticbeanstalk.com/api/player/${playerName}`);
                 if (response.ok) {
                     const data = await response.json();
                     data.playerInfo = JSON.parse(data.playerInfo);
@@ -199,7 +199,7 @@
             const playerInfo = document.createElement('div');
             playerInfo.classList.add('player-info');
             playerInfo.innerHTML = `
-                    <img src="https://www.example.com/image.png" alt="Image du joueur" class="player-image">
+                    <img src="https://cdn4.iconfinder.com/data/icons/miscellaneous-icons-1/200/misc_game_singleplayer-1024.png" alt="Image du joueur" class="player-image">
                     <h2>Informations du Joueur</h2>
                     <div class="info">Nom d'utilisateur: ${data.playerInfo.username}</div>
                     <div class="info">Alliance: ${data.playerInfo.alliance}</div>
@@ -215,6 +215,7 @@
             friendsList.innerHTML = `
                     <h2>Liste des Amis</h2>
                     <div class="info">Total Amis: ${data.friendsList.totalCount}</div>
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-friend-icon-download-in-svg-png-gif-file-formats--user-group-add-friends-users-social-network-essential-ui-pack-interface-icons-6574231.png?f=webp&w=512">
                 `;
             resultDiv.appendChild(friendsList);
 
